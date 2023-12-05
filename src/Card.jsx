@@ -5,7 +5,7 @@ const Card = (props) => {
       <div className="overflow-hidden aspect-square max-h-[500px]">
         <img
           src={props.img}
-          alt="an-athlete-makeing-flag-position-pexels-photo"
+          alt="an-athlete-makeing-flag-position-pexels"
           className="w-full h-full object-cover group-hover:scale-150 transition"
         />
       </div>

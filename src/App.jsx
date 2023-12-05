@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import Card from "./Card";
 import { cardData } from "./Carddata";
