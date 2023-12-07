@@ -10,7 +10,10 @@ const Card = (props) => {
         />
       </div>
       <h2>{props.heading}</h2>
-      <p>{props.post} </p>
+      <p
+        className={`${props.id === 1 ? "font-bold" : "unset"}`}
+        dangerouslySetInnerHTML={{ __html: props.post }}
+      ></p>
       <button>Read more...</button>
     </article>
   );

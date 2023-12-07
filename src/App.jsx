@@ -49,15 +49,21 @@ function App() {
     ],
   };
 
-  const post = cardData.map((e, i) => {
-    return <Card img={e.img} heading={e.title} post={e.post} key={i} />;
-  });
-
   return (
     <div className="min-h-screen bg-slate-500 flex items-center ">
       <div className="container mx-auto">
         <Slider ref={slider} {...settings}>
-          {post}
+          {cardData.map((e, i) => {
+            return (
+              <Card
+                img={e.img}
+                heading={e.title}
+                id={e.id}
+                post={e.post}
+                key={i}
+              />
+            );
+          })}
         </Slider>
         <div className="flex justify-between mt-[50px] px-3">
           <button onClick={slidePrev}>Prev</button>
