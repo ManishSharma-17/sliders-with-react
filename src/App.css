@@ -1,0 +1,56 @@
+.slick-list {
+    overflow: visible !important;
+    padding: 0 20% 0 0 !important;
+    position: relative !important;
+    z-index: 0 !important;
+}
+
+.slick-list::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: white;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 12px !important;
+    /* width: 100% !important; */
+}
+
+.slick-slide {
+    height: inherit !important;
+    display: flex !important;
+}
+
+.slick-slide>div {
+    display: flex;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-title {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #F0F0F0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content.open {
+    max-height: unset;
+}

@@ -1,17 +1,24 @@
 import React from "react";
 const Card = (props) => {
+  let id = props.id;
   return (
-    <article className="text-center overflow-hidden group bg-green-200 rounded-2xl">
+    <article
+      id={id}
+      className="text-center overflow-hidden group bg-green-200 rounded-2xl"
+    >
+      <span className=" flex justify-center group-hover:bg-black">
+        {props.icon}
+      </span>
       <div className="overflow-hidden aspect-square max-h-[500px]">
         <img
           src={props.img}
-          alt="an-athlete-makeing-flag-position-pexels"
+          alt="card images"
           className="w-full h-full object-cover group-hover:scale-150 transition"
         />
       </div>
       <h2>{props.heading}</h2>
       <p
-        className={`${props.id === 1 ? "font-bold" : "unset"}`}
+        className={`${id === 2 ? "text-red-700" : "unset"}`}
         dangerouslySetInnerHTML={{ __html: props.post }}
       ></p>
       <button>Read more...</button>

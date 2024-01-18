@@ -6,17 +6,7 @@
   box-sizing: border-box;
 }
 
-.slick-track {
-  display: flex !important;
-  gap: 12px !important;
-  /* width: 100% !important; */
-}
-
-.slick-slide {
-  height: inherit !important;
-  display: flex !important;
-}
-
-.slick-slide>div {
-  display: flex;
+@font-face {
+  font-family: "JollyLodger";
+  src: url("./assets/fonts/JollyLodger-Regular.ttf");
 }
